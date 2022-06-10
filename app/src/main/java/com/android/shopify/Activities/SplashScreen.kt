@@ -1,4 +1,4 @@
-package com.android.shopify
+package com.android.shopify.Activities
 
 import android.content.Intent
 import android.os.Build
@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.WindowInsets
 import android.view.WindowManager.LayoutParams.*
+import com.android.shopify.R
 
 class splashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +30,7 @@ class splashScreen : AppCompatActivity() {
         @Suppress("deprecation")
         Handler().postDelayed(
             {
-            startActivity(Intent(this@splashScreen,MainActivity::class.java))
+            startActivity(Intent(this@splashScreen, LoginActivity::class.java))
         },
         2500)
 

@@ -1,7 +1,8 @@
-package com.android.shopify
+package com.android.shopify.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.android.shopify.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

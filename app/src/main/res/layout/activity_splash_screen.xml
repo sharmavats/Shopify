@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FBF9F9"
     android:layout_height="match_parent"
-    tools:context=".splashScreen">
+    tools:context=".Activities.splashScreen">
 
     <ImageView
         android:id="@+id/imageView"
@@ -16,18 +17,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img"
-        android:scaleType="fitXY"/>
+        app:srcCompat="@drawable/img_1"
+        android:scaleType="center"/>
 
-    <TextView
+    <com.android.shopify.utils.MSTextViewBold
         android:id="@+id/tagline"
-        android:layout_width="179dp"
-        android:layout_height="29dp"
-        android:layout_marginBottom="215dp"
+        android:layout_width="279dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="60dp"
         android:background="@color/white"
-        android:text="True Style Never Dies"
+        android:text="Shop at Comfort of Home"
         android:textAlignment="center"
-        android:textColor="#BD456E"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
