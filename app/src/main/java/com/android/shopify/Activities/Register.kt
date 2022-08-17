@@ -9,10 +9,10 @@ import android.view.WindowManager
 import android.widget.TextView
 import com.android.shopify.R
 
-class LoginActivity : AppCompatActivity() {
+class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_register)
 
         @Suppress("deprecation")
         if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.R){
@@ -24,9 +24,10 @@ class LoginActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
-    val register:TextView = findViewById(R.id.register)
-        register.setOnClickListener(){
-            val intent = Intent(this@LoginActivity, Register::class.java)
+
+        val login: TextView = findViewById(R.id.login)
+        login.setOnClickListener(){
+            val intent = Intent(this@Register, LoginActivity::class.java)
             startActivity(intent)
         }
 
